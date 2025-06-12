@@ -1,0 +1,13 @@
+# Environment variables and sensitive info
+.env
+
+# IDE and system files
+.idea/
+.vscode/
+.DS_Store
+
+# Logs
+*.log
+
+# Dependencies
+/vendor/
