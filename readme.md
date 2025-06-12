@@ -28,8 +28,8 @@ Create a basic PHP app that uses the Okta service for authentication (authN).
 
 ### Configuration Details
 
-7. Copy the Client ID: `0oa6icqjxtDuNze4m5d7`
-8. Copy the Client Secret: `OdW3QV3L_o2RrEgXqVd6EQLfvt9KJtOkPGkCvWeY`
+7. Copy the Client ID: `xxxxx`
+8. Copy the Client Secret: `xxxxxxxxx`
 9. Make note of your Okta Org URL (found in the URL of your Okta developer page, e.g., `https://dev-96447452-admin.okta.com/`)
 10. Modify the values for the client ID, secret, and Okta Org in the `index.php` file
 
@@ -39,3 +39,5 @@ Create a basic PHP app that uses the Okta service for authentication (authN).
 2. Access the application at: `http://localhost:80`
 
 > **Note:** If you encounter errors, ensure that Docker is running on your local machine.
+
+<img src="login_image.png" alt="Alt text" width="300" height="200">
