@@ -40,4 +40,4 @@ Create a basic PHP app that uses the Okta service for authentication (authN).
 
 > **Note:** If you encounter errors, ensure that Docker is running on your local machine.
 
-<img src="login_image.png" alt="Alt text" width="600" height="600">
+<img src="login_image.png" alt="Alt text" width="900" height="600">
