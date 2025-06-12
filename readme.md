@@ -1,22 +1,41 @@
-### Docker Php App using Okta Demo
+# Docker PHP App using Okta Demo
 
-Goal: make a basic Php app that's able to use the Okta service for authentication (authN).
+## Project Overview
 
-Okta article: https://developer.okta.com/blog/2018/07/09/five-minute-php-app-auth
+I created an OIDC SSO framework from an existing PHP application. This project demonstrates how to implement Single Sign-on using Okta's OpenID Connect.
 
-Steps: 
-1. Go to https://developer.okta.com/ and sign in (create an account if needed)
-2. Applications > applications > Create app integration > choose OIDC > choose Web App > Next 
-3. Name the app > set sign-in redirect URI: http://localhost:80/ (include the http and the trailing / char)
-4. Do the same for the sign-out redirect URI: http://localhost:80/
-5. Assignments > allow everyone in your org to access 
-6. Copy the Client ID: 0oa6icqjxtDuNze4m5d7
-7. Copy the Client Secret: OdW3QV3L_o2RrEgXqVd6EQLfvt9KJtOkPGkCvWeY
-8. Make note of the Okta Org (in the URL of the Okta developer page: https://dev-96447452-admin.okta.com/)
-9. Modify the values for the client id, secret, and okta org in the index.php file
+This PHP application was cloned from an existing repository, and I implemented the OIDC framework on top of it.
+It's a simple website enhanced with SSO functionality, allowing routing rules for Entra ID users.
 
-To run code: 
-1. Run cmd: `docker-compose up` from the project repo 
-2. Go to: `http://localhost/:80` 
+This web application works with Docker and runs locally on your machine.
 
-If you are getting errors, make sure that Docker is running on your local machine. 
+## Goal
+
+Create a basic PHP app that uses the Okta service for authentication (authN).
+
+**Reference:** [Okta Article: Build a Simple PHP App with Authentication](https://developer.okta.com/blog/2018/07/09/five-minute-php-app-auth)
+
+## Setup Instructions
+
+### Okta Configuration
+
+1. Go to [Okta Developer Portal](https://developer.okta.com/) and sign in (create an account if needed)
+2. Navigate to Applications > Applications > Create app integration
+3. Choose OIDC, then select Web App, and click Next
+4. Name the app and set sign-in redirect URI: `http://localhost:80/` (include the http and the trailing / character)
+5. Do the same for the sign-out redirect URI: `http://localhost:80/`
+6. Under Assignments, allow everyone in your org to access
+
+### Configuration Details
+
+7. Copy the Client ID: `0oa6icqjxtDuNze4m5d7`
+8. Copy the Client Secret: `OdW3QV3L_o2RrEgXqVd6EQLfvt9KJtOkPGkCvWeY`
+9. Make note of your Okta Org URL (found in the URL of your Okta developer page, e.g., `https://dev-96447452-admin.okta.com/`)
+10. Modify the values for the client ID, secret, and Okta Org in the `index.php` file
+
+### Running the Application
+
+1. Run command: `docker-compose up` from the project repository
+2. Access the application at: `http://localhost:80`
+
+> **Note:** If you encounter errors, ensure that Docker is running on your local machine.
